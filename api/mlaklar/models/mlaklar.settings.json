@@ -20,10 +20,6 @@
       "type": "string",
       "required": true
     },
-    "price": {
-      "type": "string",
-      "required": true
-    },
     "salesType": {
       "type": "string",
       "required": true
@@ -38,18 +34,6 @@
       "default": " "
     },
     "city": {
-      "type": "string",
-      "required": true
-    },
-    "roomCount": {
-      "type": "string",
-      "required": true
-    },
-    "floor": {
-      "type": "string",
-      "required": true
-    },
-    "area": {
       "type": "string",
       "required": true
     },
@@ -97,13 +81,6 @@
       "type": "string",
       "default": " "
     },
-    "floorCount": {
-      "type": "string",
-      "required": true
-    },
-    "bathroomCount": {
-      "type": "string"
-    },
     "uploadedTime": {
       "type": "datetime",
       "required": true
@@ -111,6 +88,29 @@
     "village": {
       "type": "string",
       "default": " "
+    },
+    "price": {
+      "type": "integer",
+      "required": true
+    },
+    "roomCount": {
+      "type": "integer"
+    },
+    "floor": {
+      "type": "integer",
+      "required": true
+    },
+    "area": {
+      "type": "integer",
+      "required": true
+    },
+    "floorCount": {
+      "type": "integer",
+      "required": true
+    },
+    "bathroomCount": {
+      "type": "integer",
+      "required": true
     }
   }
 }
