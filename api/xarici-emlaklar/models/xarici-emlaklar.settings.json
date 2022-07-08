@@ -1,0 +1,87 @@
+{
+  "kind": "collectionType",
+  "collectionName": "xarici_emlaklars",
+  "info": {
+    "name": "xariciEmlaklar",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "address": {
+      "type": "text"
+    },
+    "area": {
+      "type": "string"
+    },
+    "barter": {
+      "type": "string"
+    },
+    "bathCount": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "distanceToAirport": {
+      "type": "string"
+    },
+    "distanceToSea": {
+      "type": "string"
+    },
+    "estateType": {
+      "type": "string"
+    },
+    "floor": {
+      "type": "string"
+    },
+    "floorCount": {
+      "type": "string"
+    },
+    "heatingSystem": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "roomCount": {
+      "type": "string"
+    },
+    "salesType": {
+      "type": "string"
+    },
+    "uploaderName": {
+      "type": "string"
+    },
+    "mainImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "region": {
+      "type": "string"
+    }
+  }
+}

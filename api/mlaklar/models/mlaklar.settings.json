@@ -1,0 +1,116 @@
+{
+  "kind": "collectionType",
+  "collectionName": "emlaklar",
+  "info": {
+    "name": "emlaklar",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "barter": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "string",
+      "required": true
+    },
+    "salesType": {
+      "type": "string",
+      "required": true
+    },
+    "estateType": {
+      "type": "string",
+      "required": true
+    },
+    "region": {
+      "type": "string",
+      "required": false,
+      "default": " "
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "roomCount": {
+      "type": "string",
+      "required": true
+    },
+    "floor": {
+      "type": "string",
+      "required": true
+    },
+    "area": {
+      "type": "string",
+      "required": true
+    },
+    "homeDocument": {
+      "type": "string",
+      "required": true
+    },
+    "ownerType": {
+      "type": "string",
+      "required": true
+    },
+    "phoneNumber": {
+      "type": "string",
+      "required": true
+    },
+    "uploaderName": {
+      "type": "string",
+      "required": true
+    },
+    "mainImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "ipoteka": {
+      "type": "string",
+      "required": false
+    },
+    "metro": {
+      "type": "string",
+      "default": " "
+    },
+    "floorCount": {
+      "type": "string",
+      "required": true
+    },
+    "bathroomCount": {
+      "type": "string"
+    },
+    "uploadedTime": {
+      "type": "datetime",
+      "required": true
+    },
+    "village": {
+      "type": "string",
+      "default": " "
+    }
+  }
+}

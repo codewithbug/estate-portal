@@ -1,2 +1,3 @@
-# estate-portal
-respectgroup estate
+# Strapi application
+
+A quick description of your strapi application

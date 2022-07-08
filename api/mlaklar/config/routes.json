@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mlaklars",
+      "handler": "mlaklar.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mlaklars/count",
+      "handler": "mlaklar.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mlaklars/:id",
+      "handler": "mlaklar.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mlaklars",
+      "handler": "mlaklar.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mlaklars/:id",
+      "handler": "mlaklar.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mlaklars/:id",
+      "handler": "mlaklar.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

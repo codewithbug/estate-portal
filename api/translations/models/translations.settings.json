@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "translations",
+  "info": {
+    "name": "translations"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "az": {
+      "type": "string"
+    },
+    "tr": {
+      "type": "string"
+    },
+    "en": {
+      "type": "string"
+    },
+    "ru": {
+      "type": "string"
+    },
+    "ae": {
+      "type": "string"
+    },
+    "ir": {
+      "type": "string"
+    }
+  }
+}

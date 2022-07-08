@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/xarici-emlaklars",
+      "handler": "xarici-emlaklar.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/xarici-emlaklars/count",
+      "handler": "xarici-emlaklar.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/xarici-emlaklars/:id",
+      "handler": "xarici-emlaklar.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/xarici-emlaklars",
+      "handler": "xarici-emlaklar.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/xarici-emlaklars/:id",
+      "handler": "xarici-emlaklar.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/xarici-emlaklars/:id",
+      "handler": "xarici-emlaklar.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
