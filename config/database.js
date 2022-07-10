@@ -9,7 +9,7 @@ module.exports = ({ env }) => ({
         port: env.int('DATABASE_PORT', 3306),
         database: env('DATABASE_NAME', 'strapi-baxaq'),
         username: env('DATABASE_USERNAME', 'root'),
-        password: env('DATABASE_PASSWORD', ''),
+        password: env('DATABASE_PASSWORD', 'Baza2029@'),
         ssl: env.bool('DATABASE_SSL', false),
       },
       options: {}
