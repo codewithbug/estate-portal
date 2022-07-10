@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/plan-images",
+      "handler": "plan-images.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plan-images/count",
+      "handler": "plan-images.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plan-images/:id",
+      "handler": "plan-images.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plan-images",
+      "handler": "plan-images.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/plan-images/:id",
+      "handler": "plan-images.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/plan-images/:id",
+      "handler": "plan-images.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

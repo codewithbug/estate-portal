@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/living-complexes",
+      "handler": "living-complexes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/living-complexes/count",
+      "handler": "living-complexes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/living-complexes/:id",
+      "handler": "living-complexes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/living-complexes",
+      "handler": "living-complexes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/living-complexes/:id",
+      "handler": "living-complexes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/living-complexes/:id",
+      "handler": "living-complexes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

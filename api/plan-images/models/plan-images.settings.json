@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plan_images",
+  "info": {
+    "name": "complex-plans",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "roomCount": {
+      "type": "integer"
+    },
+    "planImages": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "area": {
+      "type": "integer"
+    },
+    "pricePerSquare": {
+      "type": "integer"
+    },
+    "repair": {
+      "type": "string"
+    },
+    "terasCount": {
+      "type": "integer"
+    },
+    "bathroomCount": {
+      "type": "integer"
+    },
+    "bedroomCount": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "kind": "collectionType",
+  "collectionName": "living_complexes",
+  "info": {
+    "name": "living-complexes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "price": {
+      "type": "integer",
+      "required": true
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "name": {
+      "type": "string"
+    },
+    "floorCount": {
+      "type": "integer"
+    },
+    "area": {
+      "type": "integer"
+    },
+    "metro": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "minimumPricePerSquare": {
+      "type": "integer"
+    },
+    "descriptionShort": {
+      "type": "string"
+    },
+    "parking": {
+      "type": "enumeration",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "corpusCount": {
+      "type": "integer"
+    },
+    "flatCountPerFloor": {
+      "type": "integer"
+    },
+    "blockCount": {
+      "type": "integer"
+    },
+    "flatCount": {
+      "type": "integer"
+    },
+    "elevatorCountPerBlock": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "text"
+    },
+    "plan_images": {
+      "collection": "plan-images"
+    }
+  }
+}
