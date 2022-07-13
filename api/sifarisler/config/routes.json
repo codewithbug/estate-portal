@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sifarislers",
+      "handler": "sifarisler.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sifarislers/count",
+      "handler": "sifarisler.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sifarislers/:id",
+      "handler": "sifarisler.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sifarislers",
+      "handler": "sifarisler.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sifarislers/:id",
+      "handler": "sifarisler.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sifarislers/:id",
+      "handler": "sifarisler.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

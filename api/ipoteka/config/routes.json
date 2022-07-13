@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ipotekas",
+      "handler": "ipoteka.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ipotekas/count",
+      "handler": "ipoteka.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ipotekas/:id",
+      "handler": "ipoteka.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ipotekas",
+      "handler": "ipoteka.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ipotekas/:id",
+      "handler": "ipoteka.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ipotekas/:id",
+      "handler": "ipoteka.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sifarislers",
+  "info": {
+    "name": "sifarisler",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "orderDescription": {
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "phoneNumber": {
+      "type": "string"
+    }
+  }
+}

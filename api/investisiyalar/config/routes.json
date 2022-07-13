@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/investisiyalars",
+      "handler": "investisiyalar.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/investisiyalars/count",
+      "handler": "investisiyalar.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/investisiyalars/:id",
+      "handler": "investisiyalar.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/investisiyalars",
+      "handler": "investisiyalar.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/investisiyalars/:id",
+      "handler": "investisiyalar.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/investisiyalars/:id",
+      "handler": "investisiyalar.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

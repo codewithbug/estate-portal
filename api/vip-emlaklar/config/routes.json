@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/vip-emlaklars",
+      "handler": "vip-emlaklar.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vip-emlaklars/count",
+      "handler": "vip-emlaklar.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/vip-emlaklars/:id",
+      "handler": "vip-emlaklar.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/vip-emlaklars",
+      "handler": "vip-emlaklar.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/vip-emlaklars/:id",
+      "handler": "vip-emlaklar.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/vip-emlaklars/:id",
+      "handler": "vip-emlaklar.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

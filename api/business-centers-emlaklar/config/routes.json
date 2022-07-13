@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/business-centers-emlaklars",
+      "handler": "business-centers-emlaklar.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/business-centers-emlaklars/count",
+      "handler": "business-centers-emlaklar.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/business-centers-emlaklars/:id",
+      "handler": "business-centers-emlaklar.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/business-centers-emlaklars",
+      "handler": "business-centers-emlaklar.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/business-centers-emlaklars/:id",
+      "handler": "business-centers-emlaklar.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/business-centers-emlaklars/:id",
+      "handler": "business-centers-emlaklar.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

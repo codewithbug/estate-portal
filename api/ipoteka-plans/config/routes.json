@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ipoteka-plans",
+      "handler": "ipoteka-plans.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ipoteka-plans/count",
+      "handler": "ipoteka-plans.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ipoteka-plans/:id",
+      "handler": "ipoteka-plans.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ipoteka-plans",
+      "handler": "ipoteka-plans.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ipoteka-plans/:id",
+      "handler": "ipoteka-plans.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ipoteka-plans/:id",
+      "handler": "ipoteka-plans.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

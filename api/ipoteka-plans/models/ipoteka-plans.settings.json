@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ipoteka_plans",
+  "info": {
+    "name": "ipoteka-plans",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "roomCount": {
+      "type": "integer"
+    },
+    "planImages": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "area": {
+      "type": "integer"
+    },
+    "pricePerSquare": {
+      "type": "integer"
+    },
+    "repair": {
+      "type": "string"
+    },
+    "terasCount": {
+      "type": "integer"
+    },
+    "bathroomCount": {
+      "type": "integer"
+    },
+    "bedroomCount": {
+      "type": "integer"
+    }
+  }
+}

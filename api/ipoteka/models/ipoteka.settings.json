@@ -1,0 +1,90 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ipotekas",
+  "info": {
+    "name": "ipoteka",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "floorCount": {
+      "type": "integer"
+    },
+    "area": {
+      "type": "integer"
+    },
+    "metro": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "minimumPricePerSquare": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "descriptionShort": {
+      "type": "string"
+    },
+    "parking": {
+      "type": "enumeration",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "corpusCount": {
+      "type": "integer"
+    },
+    "flatCountPerFloor": {
+      "type": "integer"
+    },
+    "blockCount": {
+      "type": "integer"
+    },
+    "elevatorCountPerBlock": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "text"
+    },
+    "flatCount": {
+      "type": "integer"
+    },
+    "plan_images": {
+      "collection": "ipoteka-plans"
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "kind": "collectionType",
+  "collectionName": "business_centers_emlaklars",
+  "info": {
+    "name": "business-centers-emlaklar",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "barter": {
+      "type": "string"
+    },
+    "salesType": {
+      "type": "string"
+    },
+    "estateType": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "homeDocument": {
+      "type": "string"
+    },
+    "ownerType": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "uploaderName": {
+      "type": "string"
+    },
+    "mainImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "ipoteka": {
+      "type": "enumeration",
+      "enum": [
+        "yes",
+        "no"
+      ]
+    },
+    "metro": {
+      "type": "string"
+    },
+    "uploadedTime": {
+      "type": "datetime"
+    },
+    "village": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "roomCount": {
+      "type": "integer"
+    },
+    "floor": {
+      "type": "integer"
+    },
+    "area": {
+      "type": "integer"
+    },
+    "floorCount": {
+      "type": "integer"
+    },
+    "bathroomCount": {
+      "type": "integer"
+    }
+  }
+}
